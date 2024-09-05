@@ -3,9 +3,9 @@ package main
 import (
 	"log"
 
+	"github.com/kake87/CF_UserRegistrationService/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
-	"github.com/kake87/register-service/models"
 )
 
 var db *gorm.DB
@@ -27,7 +27,3 @@ func main() {
 	initDatabase()
 	db.AutoMigrate(&models.User{})
 }
-
-
-
-
