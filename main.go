@@ -15,7 +15,7 @@ var db *gorm.DB
 
 func initDatabase() {
 	// Подключение к базе данных PostgreSQL
-	dsn := "host=localhost user=postgres password=yourpassword dbname=yourdb port=5432 sslmode=disable"
+	dsn := "host=localhost user=postgres password=Dut757971! dbname=user_registration port=5432 sslmode=disable"
 	var err error
 	db, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
@@ -34,7 +34,7 @@ func main() {
 	router := gin.Default()
 
 	// Маршрут для регистрации пользователя
-	router.POST("/register", func(c *gin.Context) {
+	router.POST("/api/register", func(c *gin.Context) {
 		var input models.User
 
 		// Парсинг JSON из тела запроса
