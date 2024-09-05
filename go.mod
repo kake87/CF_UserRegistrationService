@@ -1,5 +1,6 @@
 module github.com/kake87/register-service
 
+
 go 1.22.2
 
 require (

@@ -5,7 +5,7 @@ import (
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
-	"./models"
+	"github.com/kake87/register-service/models"
 )
 
 var db *gorm.DB
