@@ -1,4 +1,4 @@
-module github.com/kake87/register-service
+module github.com/kake87/CF_UserRegistrationService
 
 
 go 1.22.2
